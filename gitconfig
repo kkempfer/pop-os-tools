@@ -1,0 +1,17 @@
+[user]
+	name = Kévin Kempfer
+	email = kevin.kempfer@hotmail.fr
+[core]
+	editor = vim
+	autocrlf = input
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
