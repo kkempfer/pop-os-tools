@@ -22,3 +22,9 @@ ln -s $(pwd)/gvimrc ~/.gvimrc
 
 ln -s $(pwd)/gitconfig ~/.gitconfig
 
+# -----------------------------------------------------------------------------
+# Multimedia Codecs
+# -----------------------------------------------------------------------------
+
+apt install ubuntu-restricted-extras
+
