@@ -69,3 +69,9 @@ apt install playonlinux
 apt install gimp
 apt install krita
 
+# -----------------------------------------------------------------------------
+# Web
+# -----------------------------------------------------------------------------
+
+apt install google-chrome-stable
+
