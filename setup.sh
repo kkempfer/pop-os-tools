@@ -37,3 +37,9 @@ ufw enable
 # Graphical User Interface.
 apt install gufw
 
+# -----------------------------------------------------------------------------
+# Debian/Ubuntu customization
+# -----------------------------------------------------------------------------
+
+apt install gnome-tweaks
+
