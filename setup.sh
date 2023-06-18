@@ -28,3 +28,12 @@ ln -s $(pwd)/gitconfig ~/.gitconfig
 
 apt install ubuntu-restricted-extras
 
+# -----------------------------------------------------------------------------
+# Firewall
+# -----------------------------------------------------------------------------
+
+ufw enable
+
+# Graphical User Interface.
+apt install gufw
+
