@@ -42,4 +42,13 @@ apt install gufw
 # -----------------------------------------------------------------------------
 
 apt install gnome-tweaks
+apt install htop
+
+# -----------------------------------------------------------------------------
+# Sensors
+# -----------------------------------------------------------------------------
+
+# www.lm-sensors.org/wiki/Documentation
+apt install lm-sensors
+apt install psensor
 
