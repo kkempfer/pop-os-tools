@@ -67,7 +67,10 @@ apt install default-jre
 # -----------------------------------------------------------------------------
 
 apt install playonlinux
+
 apt install steam
+# Enable Proton Support in Steam > Settings > Compatibility
+
 
 # -----------------------------------------------------------------------------
 # Image manipulation
