@@ -6,7 +6,7 @@ Tools to configure my Pop!\_OS environment
 
 Clone this repository:
 
-    git clone git://github.com/kkempfer/pop-os-tools.git
+    git clone https://github.com/kkempfer/pop-os-tools.git
 
 Create the symbolic links:
 
