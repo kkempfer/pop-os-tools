@@ -1,6 +1,12 @@
 #!/bin/bash
 
 # -----------------------------------------------------------------------------
+# Resources
+# -----------------------------------------------------------------------------
+
+# https://github.com/mikeroyal/Pop_OS-Guide
+
+# -----------------------------------------------------------------------------
 # Bash
 # -----------------------------------------------------------------------------
 
@@ -29,25 +35,12 @@ ln -s $(pwd)/gitconfig ~/.gitconfig
 apt install ubuntu-restricted-extras
 
 # -----------------------------------------------------------------------------
-# Firewall
+# Security
 # -----------------------------------------------------------------------------
 
+# Firewall.
 ufw enable
-
-# Graphical User Interface.
 apt install gufw
-
-# -----------------------------------------------------------------------------
-# Sensors
-# -----------------------------------------------------------------------------
-
-# www.lm-sensors.org/wiki/Documentation
-apt install lm-sensors
-apt install psensor
-
-# -----------------------------------------------------------------------------
-# Benchmarks
-# -----------------------------------------------------------------------------
 
 # -----------------------------------------------------------------------------
 # Debian/Ubuntu customization
@@ -55,6 +48,34 @@ apt install psensor
 
 apt install gnome-tweaks
 apt install htop
+
+# -----------------------------------------------------------------------------
+# Sensors
+# -----------------------------------------------------------------------------
+
+apt install cpu-x
+flatpak --user install flathub io.github.arunsivaramanneo.GPUViewer
+
+apt install stacer
+
+apt install lm-sensors
+apt install psensor
+
+flatpak --user install flathub io.github.jorchube.monitorets
+
+flatpak --user install flathub com.github.gpuvis.Gpuvis
+
+# -----------------------------------------------------------------------------
+# Hardware control
+# -----------------------------------------------------------------------------
+
+# TODO thinkfan
+
+# -----------------------------------------------------------------------------
+# Benchmarks
+# -----------------------------------------------------------------------------
+
+flatpak --user install flathub com.leinardi.gst
 
 # -----------------------------------------------------------------------------
 # Java
@@ -65,6 +86,8 @@ apt install default-jre
 # -----------------------------------------------------------------------------
 # Games
 # -----------------------------------------------------------------------------
+
+apt install lutris
 
 apt install playonlinux
 
@@ -78,14 +101,22 @@ apt install steam
 # GameHub not supported in Pop!_OS versions later than 20.04 ?
 # apt install gamehub
 
-apt install lutris
-
 # -----------------------------------------------------------------------------
 # Image manipulation
 # -----------------------------------------------------------------------------
 
 apt install gimp
 apt install krita
+apt install inkscape
+
+# -----------------------------------------------------------------------------
+# Video
+# -----------------------------------------------------------------------------
+
+apt install obs-studio
+flatpak --user install flathub com.dec05eba.gpu_screen_recorder
+
+apt install blender
 
 # -----------------------------------------------------------------------------
 # Web

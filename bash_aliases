@@ -29,11 +29,8 @@ alias rmf="rm -fv"
 alias du="du -h"
 alias df="df -h"
 
-# Ubuntu file navigator.
+# File navigator.
 alias nautilus="nautilus ."
-
-# WSL file explorer.
-alias explorer="explorer.exe ."
 
 # -----------------------------------------------------------------------------
 # Code
