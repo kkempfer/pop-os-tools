@@ -90,6 +90,8 @@ apt install playonlinux
 # https://support.system76.com/articles/linux-gaming/
 
 apt install steam
+# https://askubuntu.com/questions/1378348/steam-launches-using-terminal-but-not-with-launcher-icon-ubuntu-21-10-nvidia
+sed -i 's/PrefersNonDefaultGPU=true/PrefersNonDefaultGPU=false/g' /usr/share/applications/steam.desktop
 # Enable proton support in Steam > Settings > Compatibility
 # Enable shader pre-caching in Downloads > Shader pre-caching
 # TODO https://support.system76.com/articles/linux-gaming/#use-protonup-to-manage-custom-proton-versions
