@@ -74,8 +74,15 @@ wget -P ~/Downloads https://phoronix-test-suite.com/releases/repo/pts.debian/fil
 apt install ~/Downloads/phoronix-test-suite_10.8.4_all.deb
 
 # -----------------------------------------------------------------------------
-# Java
+# Programming
 # -----------------------------------------------------------------------------
+
+apt install build-essential
+apt install cmake
+
+# .............................................................................
+# Java
+# .............................................................................
 
 apt install default-jre
 
@@ -98,6 +105,19 @@ sed -i 's/PrefersNonDefaultGPU=true/PrefersNonDefaultGPU=false/g' /usr/share/app
 
 # GameHub not supported in Pop!_OS versions later than 20.04 ?
 # apt install gamehub
+
+# .............................................................................
+# Nintendo Switch Joy-Con
+# .............................................................................
+
+apt install libevdev-dev
+
+git clone https://github.com/DanielOgorchock/joycond ~/Repositories/joycond
+pushd ~/Repositories/joycond
+cmake .
+make install
+systemctl enable --now joycond
+popd
 
 # -----------------------------------------------------------------------------
 # Image manipulation
