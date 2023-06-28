@@ -1,10 +1,14 @@
-## Memory
+## Symptoms
+
+After turning on the XMP profile, the system gets stuck at login. The BIOS is accessible, but it will freeze upon exiting. Clearing the CMOS fixes the issue, at the cost of loosing the XMP acceleration.
 
 TEAMGROUP T-Force Vulcan DDR5 32GB Kit (2x16GB) 5600MHz (PC5-44800) CL32 Desktop Memory Module Ram (Red) for Z690- FLRD532G5600HC32DC01
 
 https://www.amazon.ca/TEAMGROUP-T-Force-5600MHz-PC5-44800-FLRD532G5600HC32DC01/dp/B0B3GMF2RR/ref=sr_1_1?crid=36GIP3IBPOBAC&keywords=FLRD532G5600HC32DC01&qid=1687925242&sprefix=flrd532g5600hc32dc01%2Caps%2C76&sr=8-1
 
 ## Compatibility [TEAMGROUP]
+
+Possible compatibility issue between the motherboard and the memory. Discarded AMD Ryzen 5 7600X that officially supports 2x1R 5200 MHz, since many users claim it can keep up with memory speed up to 6000 MHz.
 
 ### Search by device, _i.e._ motherboard
 
@@ -24,7 +28,7 @@ FLRD532G5600HC32DC01 unknown if compatible with AMD B650 MSI MAG B650 TOMAHAWK W
 
 https://www.msi.com/Motherboard/MAG-B650-TOMAHAWK-WIFI/support#mem
 
-## Conclusion
+## Solution
 
-Should we wait for a BIOS update ?
+Should we wait for a BIOS update ? Contact TEAMGROUP, MSI, AMD ?
 
