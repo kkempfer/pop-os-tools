@@ -6,6 +6,13 @@ TEAMGROUP T-Force Vulcan DDR5 32GB Kit (2x16GB) 5600MHz (PC5-44800) CL32 Desktop
 
 https://www.amazon.ca/TEAMGROUP-T-Force-5600MHz-PC5-44800-FLRD532G5600HC32DC01/dp/B0B3GMF2RR/ref=sr_1_1?crid=36GIP3IBPOBAC&keywords=FLRD532G5600HC32DC01&qid=1687925242&sprefix=flrd532g5600hc32dc01%2Caps%2C76&sr=8-1
 
+## Useful commands
+
+```
+$ sudo dmidecode --type 17
+$ sudo lshw -short -C memory
+```
+
 ## Compatibility [TEAMGROUP]
 
 Possible compatibility issue between the motherboard and the memory. Discarded AMD Ryzen 5 7600X that officially supports 2x1R 5200 MHz, since many users claim it can keep up with memory speed up to 6000 MHz.
