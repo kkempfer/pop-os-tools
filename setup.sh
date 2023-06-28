@@ -70,7 +70,7 @@ flatpak --user install flathub com.github.gpuvis.Gpuvis
 
 flatpak --user install flathub com.leinardi.gst
 
-wget -P ~/Downloads https://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_10.8.4_all.deb
+wget -P ~/Downloads/ https://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_10.8.4_all.deb
 apt install ~/Downloads/phoronix-test-suite_10.8.4_all.deb
 
 # -----------------------------------------------------------------------------
@@ -105,6 +105,10 @@ sed -i 's/PrefersNonDefaultGPU=true/PrefersNonDefaultGPU=false/g' /usr/share/app
 
 # GameHub not supported in Pop!_OS versions later than 20.04 ?
 # apt install gamehub
+
+wget -P ~/Downloads/ https://launcher.mojang.com/download/Minecraft.deb
+apt install ~/Downloads/Minecraft.deb
+ln -s ~/.minecraft ~/Games/minecraft
 
 # .............................................................................
 # Nintendo Switch Joy-Con
