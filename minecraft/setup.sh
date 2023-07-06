@@ -4,8 +4,8 @@
 # Minecraft
 # -----------------------------------------------------------------------------
 
-mkdir -p ~/Download/minecraft
-pushd ~/Download/minecraft
+mkdir -p ~/Downloads/minecraft
+pushd ~/Downloads/minecraft
 wget https://launcher.mojang.com/download/Minecraft.deb
 apt install ./Minecraft.deb
 popd
@@ -33,6 +33,12 @@ java -jar preview_OptiFine_1.20.1_HD_U_I5_pre6.jar
 # -----------------------------------------------------------------------------
 # Minecraft Modded - Create
 # -----------------------------------------------------------------------------
+
+# https://files.minecraftforge.net/net/minecraftforge/forge/
+chmod a+x forge-1.20.1-47.0.49-installer.jar
+java -jar forge-1.20.1-47.0.49-installer.jar
+
+# https://www.curseforge.com/minecraft/mc-mods/create
 
 # -----------------------------------------------------------------------------
 # Minecraft Modded - Fabric
