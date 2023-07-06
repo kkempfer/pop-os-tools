@@ -64,6 +64,8 @@ flatpak --user install flathub com.leinardi.gst
 wget -P ~/Downloads/ https://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_10.8.4_all.deb
 apt install ~/Downloads/phoronix-test-suite_10.8.4_all.deb
 
+apt install stressapptest
+
 # -----------------------------------------------------------------------------
 # Hardware control
 # -----------------------------------------------------------------------------
