@@ -127,7 +127,6 @@ apt install inkscape
 # -----------------------------------------------------------------------------
 
 apt install obs-studio
-flatpak --user install flathub com.dec05eba.gpu_screen_recorder
 
 apt install blender
 
