@@ -12,6 +12,9 @@ popd
 
 ln -s ~/.minecraft ~/Games/minecraft
 
+# https://github.com/pop-os/pop/issues/3118
+echo "drivers=pulse" >> ~/.alsoftrc
+
 # -----------------------------------------------------------------------------
 # Minecraft Modded - Fabric
 # -----------------------------------------------------------------------------
