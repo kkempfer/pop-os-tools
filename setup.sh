@@ -26,8 +26,6 @@ apt install htop
 ufw enable
 apt install gufw
 
-apt install google-chrome-stable
-
 # -----------------------------------------------------------------------------
 # OneDrive
 # -----------------------------------------------------------------------------
@@ -56,6 +54,31 @@ flatpak --user install flathub io.github.jorchube.monitorets
 flatpak --user install flathub com.github.gpuvis.Gpuvis
 
 # -----------------------------------------------------------------------------
+# Hardware control
+# -----------------------------------------------------------------------------
+
+# Fans
+apt install thinkfan
+
+# Audio
+apt install pavucontrol
+
+# Glorious Model O Wireless
+# Wireless model is likely not supported. To investigate later
+# https://github.com/outfoxxed/glorious-mouse-control
+# https://github.com/enkore/gloriousctl
+# https://github.com/libratbag/libratbag
+
+# Nintendo Switch Joy-Con
+apt install libevdev-dev
+git clone https://github.com/DanielOgorchock/joycond ~/Repositories/joycond
+pushd ~/Repositories/joycond
+cmake .
+make install
+systemctl enable --now joycond
+popd
+
+# -----------------------------------------------------------------------------
 # Benchmarks
 # -----------------------------------------------------------------------------
 
@@ -65,14 +88,6 @@ wget -P ~/Downloads/ https://phoronix-test-suite.com/releases/repo/pts.debian/fi
 apt install ~/Downloads/phoronix-test-suite_10.8.4_all.deb
 
 apt install stressapptest
-
-# -----------------------------------------------------------------------------
-# Hardware control
-# -----------------------------------------------------------------------------
-
-# TODO thinkfan
-
-apt install pavucontrol
 
 # -----------------------------------------------------------------------------
 # Programming
@@ -86,19 +101,6 @@ apt install cmake
 # .............................................................................
 
 apt install default-jre
-
-# -----------------------------------------------------------------------------
-# Nintendo Switch Joy-Con
-# -----------------------------------------------------------------------------
-
-apt install libevdev-dev
-
-git clone https://github.com/DanielOgorchock/joycond ~/Repositories/joycond
-pushd ~/Repositories/joycond
-cmake .
-make install
-systemctl enable --now joycond
-popd
 
 # -----------------------------------------------------------------------------
 # Games
@@ -117,16 +119,14 @@ apt install playonlinux
 # TODO https://support.system76.com/articles/linux-gaming/#use-protonup-to-manage-custom-proton-versions
 
 # -----------------------------------------------------------------------------
-# Image manipulation
+# Other programs
 # -----------------------------------------------------------------------------
+
+apt install google-chrome-stable
 
 apt install gimp
 apt install krita
 apt install inkscape
-
-# -----------------------------------------------------------------------------
-# Video
-# -----------------------------------------------------------------------------
 
 apt install obs-studio
 
