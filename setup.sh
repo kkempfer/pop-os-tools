@@ -63,9 +63,6 @@ apt install thinkfan
 # Audio
 apt install pavucontrol
 
-# Video
-apt install cheese
-
 # Glorious Model O Wireless
 # Wireless model is likely not supported. To investigate later
 # https://github.com/outfoxxed/glorious-mouse-control
@@ -130,6 +127,9 @@ apt install google-chrome-stable
 apt install gimp
 apt install krita
 apt install inkscape
+
+apt install guvcview
+apt install cheese
 
 apt install obs-studio
 
