@@ -27,8 +27,12 @@ ufw enable
 apt install gufw
 
 # -----------------------------------------------------------------------------
-# OneDrive
+# Servers
 # -----------------------------------------------------------------------------
+
+# .............................................................................
+# OneDrive
+# .............................................................................
 
 # https://github.com/abraunegg/onedrive
 wget -qO - https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/xUbuntu_22.04/Release.key | gpg --dearmor | sudo tee /usr/share/keyrings/obs-onedrive.gpg > /dev/null
@@ -40,6 +44,21 @@ onedrive
 onedrive --synchronize
 
 apt install keepassxc
+
+# .............................................................................
+# OpenSSH
+# .............................................................................
+
+apt install openssh-server
+
+# Open the SSH port (firewall)
+ufw allow ssh
+
+# Disable and stop the ssh service
+# systemctl disable ssh --now
+
+# Enable and start the ssh service
+# systemctl enable ssh --now
 
 # -----------------------------------------------------------------------------
 # Sensors
