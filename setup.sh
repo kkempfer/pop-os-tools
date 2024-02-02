@@ -143,9 +143,13 @@ apt install playonlinux
 
 apt install google-chrome-stable
 
+flatpak install flathub com.authy.Authy
+
 apt install gimp
 apt install krita
 apt install inkscape
+
+apt install texlive-extra-utils
 
 apt install guvcview
 apt install cheese
@@ -159,3 +163,5 @@ apt install blender
 # -----------------------------------------------------------------------------
 
 # Skype
+# Master PDF Editor
+
