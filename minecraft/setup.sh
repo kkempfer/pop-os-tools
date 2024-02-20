@@ -20,9 +20,12 @@ echo "drivers=pulse" >> ~/.alsoftrc
 # -----------------------------------------------------------------------------
 
 # https://fabricmc.net/
-wget https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.11.2/fabric-installer-0.11.2.jar
-chmod a+x fabric-installer-0.11.2.jar
-java -jar fabric-installer-0.11.2.jar
+# wget https://maven.fabricmc.net/net/fabricmc/fabric-installer/0.11.2/fabric-installer-0.11.2.jar
+#chmod a+x fabric-installer-0.11.2.jar
+#java -jar fabric-installer-0.11.2.jar
+wget https://maven.fabricmc.net/net/fabricmc/fabric-installer/1.0.0/fabric-installer-1.0.0.jar
+chmod a+x fabric-installer-1.0.0.jar
+java -jar fabric-installer-1.0.0.jar
 
 # -----------------------------------------------------------------------------
 # Minecraft Modded - Forge
