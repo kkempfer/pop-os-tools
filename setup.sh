@@ -122,6 +122,32 @@ apt install cmake
 apt install default-jre
 apt install default-jdk
 
+# .............................................................................
+# Python
+# .............................................................................
+
+apt install python3-pip python3-venv
+mkdir -p ~/venv
+
+# .............................................................................
+# Jupyter
+# .............................................................................
+
+python3 -m pip install --user jupyterlab
+
+if ! grep -q 'export PATH=~/.local/bin:$PATH' ~/.bashrc; then
+    echo '' >> ~/.bashrc
+    echo '# add ~/.local/bin to PATH' >> ~/.bashrc
+    echo 'export PATH=~/.local/bin:$PATH' >> ~/.bashrc
+fi
+source ~/.bashrc
+
+echo 'y' | jupyter kernelspec uninstall python3
+jupyter lab --generate-config
+echo '' >> ~/.jupyter/jupyter_lab_config.py
+echo '## Do not display native kernel.' >> ~/.jupyter/jupyter_lab_config.py
+echo 'c.KernelSpecManager.ensure_native_kernel = False' >> ~/.jupyter/jupyter_lab_config.py
+
 # -----------------------------------------------------------------------------
 # Games
 # -----------------------------------------------------------------------------
