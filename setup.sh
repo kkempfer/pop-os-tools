@@ -189,6 +189,6 @@ apt install blender
 # Pop!_Shop
 # -----------------------------------------------------------------------------
 
-# Skype
-# Okular
+# Skype (flatpak)
+# Okular (flatpak)
 
