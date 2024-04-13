@@ -22,6 +22,7 @@ ln -s $(pwd)/gitconfig ~/.gitconfig
 apt install ubuntu-restricted-extras
 apt install gnome-tweaks
 apt install htop
+apt install radeontop
 
 ufw enable
 apt install gufw
