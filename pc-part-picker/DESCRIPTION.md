@@ -1,4 +1,4 @@
-# AM5 AMD Linux Desktop
+# AM5 AMD Linux (Pop!\_OS) Desktop
 
 ## Description
 
@@ -13,10 +13,12 @@ CPU cooler: I went with ARCTIC cooling solutions for their quality and affordabi
 Motherboard: I selected a quality motherboard with extensive IO and integrated Wi-Fi. However, I encountered two significant issues: screen freezing with XMP/EXPO enabled and Bluetooth occasionally turning off and locking after boot. A firmware update (version 7D75v172 2023-06-30) resolved the Bluetooth issue. I did not investigate further the XMP/EXPO system stability issue yet. The MSI customer service could be improved. On another note, this motherboard comes with 2 PCIE x16 slots. In the future, I may install a second GPU (Sapphire AMD Radeon RX 7600 XT 16GB) to do some experiments with GPU passthrough technology.
 Memory: I chose AMD EXPO low-profile RAM.
 Storage: Fast !
-GPU: I opted for a GPU that seamlessly works with Linux. Check Wendell's review on the Level1Linux YouTube channel.
+GPU: I opted for a GPU that seamlessly works with Linux. Check Wendell's review on the [Level1Linux YouTube channel](https://www.youtube.com/watch?v=W0kM-c0pEak).
 Case: Excellent build quality.
 Power supply: I chose the Thermaltake Toughpower GF3, a top-tier PSU recommended by the Cultists network. The extra wattage leaves room for future upgrades. It was purchased during a sale.
 Case fans: I replaced the three DC stock fans by ARCTIC PWM fans for better performance.
+OS: I selected [Pop!\_OS](https://pop.system76.com/), a variant of Ubuntu, to try something a bit different. It has a clean, user-friendly interface.
+
 
 ## Part List
 
@@ -47,5 +49,5 @@ CPU Temp Under Load (° C): 92
 GPU Core Clock (MHz):
 GPU Effective Memory Clock (MHz):
 GPU Temp While Idle (° C): 36
-GPU Temp Under Load (° C): 70 
+GPU Temp Under Load (° C): 70
 
