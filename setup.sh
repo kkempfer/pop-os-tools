@@ -102,8 +102,6 @@ popd
 # Benchmarks
 # -----------------------------------------------------------------------------
 
-flatpak --user install flathub com.leinardi.gst
-
 wget -P ~/Downloads/ https://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_10.8.4_all.deb
 apt install ~/Downloads/phoronix-test-suite_10.8.4_all.deb
 
@@ -150,6 +148,14 @@ echo '## Do not display native kernel.' >> ~/.jupyter/jupyter_lab_config.py
 echo 'c.KernelSpecManager.ensure_native_kernel = False' >> ~/.jupyter/jupyter_lab_config.py
 
 # -----------------------------------------------------------------------------
+# AppImage management
+# -----------------------------------------------------------------------------
+
+sudo add-apt-repository ppa:appimagelauncher-team/stable
+sudo apt update
+sudo apt-get install appimagelauncher
+
+# -----------------------------------------------------------------------------
 # Games
 # -----------------------------------------------------------------------------
 
@@ -165,6 +171,19 @@ apt install playonlinux
 
 # TODO https://support.system76.com/articles/linux-gaming/#use-protonup-to-manage-custom-proton-versions
 
+# .............................................................................
+# GDLauncher
+# .............................................................................
+
+# Manual download of GDLauncher__2.0.9__linux__x64.AppImage on https://gdlauncher.com/
+# Setup with AppImageLauncher
+
+# Fix icon, see also https://github.com/gorilla-devs/GDLauncher/issues/411
+wget -P https://user-images.githubusercontent.com/66513643/112387891-a3063780-8cf2-11eb-8f36-63051dd9d253.png -O /usr/share/pixmaps/gdlauncher.png
+gtk-update-icon-cache /usr/share/pixmaps/*
+# ~/.local/share/applications/appimagekit_706862cbd7b28f642adf38dfba81329e-@gddesktop.desktop
+# Icon=gdlauncher
+
 # -----------------------------------------------------------------------------
 # Other programs
 # -----------------------------------------------------------------------------
@@ -177,6 +196,8 @@ apt install gimp
 apt install krita
 apt install inkscape
 
+flatpak install flathub org.kde.okular
+
 apt install texlive-extra-utils
 
 apt install guvcview
@@ -185,11 +206,5 @@ apt install cheese
 apt install obs-studio
 
 apt install blender
-
-# -----------------------------------------------------------------------------
-# Pop!_Shop
-# -----------------------------------------------------------------------------
-
-# Skype (flatpak)
-# Okular (flatpak)
+flatpak install flathub net.blockbench.Blockbench￼
 
