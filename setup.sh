@@ -120,14 +120,14 @@ apt install cmake
 
 # https://code.visualstudio.com/docs/setup/linux
 # https://github.com/erik1066/pop-os-setup/blob/master/README.md
-sudo apt-get install wget gpg
+apt install wget gpg
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
-sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
-sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
 rm -f packages.microsoft.gpg
-sudo apt install apt-transport-https
-sudo apt update
-sudo apt install code
+apt install apt-transport-https
+apt update
+apt install code
 
 # .............................................................................
 # Java
@@ -166,9 +166,9 @@ echo 'c.KernelSpecManager.ensure_native_kernel = False' >> ~/.jupyter/jupyter_la
 # AppImage management
 # -----------------------------------------------------------------------------
 
-sudo add-apt-repository ppa:appimagelauncher-team/stable
-sudo apt update
-sudo apt-get install appimagelauncher
+add-apt-repository ppa:appimagelauncher-team/stable
+apt update
+apt install appimagelauncher
 
 # -----------------------------------------------------------------------------
 # Games
@@ -204,8 +204,6 @@ gtk-update-icon-cache /usr/share/pixmaps/*
 # -----------------------------------------------------------------------------
 
 apt install google-chrome-stable
-
-flatpak install flathub com.authy.Authy
 
 apt install gimp
 apt install krita
