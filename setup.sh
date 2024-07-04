@@ -221,3 +221,10 @@ apt install obs-studio
 apt install blender
 flatpak install flathub net.blockbench.Blockbench￼
 
+# .............................................................................
+# Zoom
+# .............................................................................
+
+wget -P ~/Downloads/ https://zoom.us/client/6.1.1.443/zoom_amd64.deb
+apt install ~/Downloads/zoom_amd64.deb
+
