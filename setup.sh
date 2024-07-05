@@ -21,11 +21,15 @@ ln -s $(pwd)/gitconfig ~/.gitconfig
 
 apt install ubuntu-restricted-extras
 apt install gnome-tweaks
-apt install htop
-apt install radeontop
+
+# -----------------------------------------------------------------------------
+# Security
+# -----------------------------------------------------------------------------
 
 ufw enable
 apt install gufw
+
+apt install keepassxc
 
 # -----------------------------------------------------------------------------
 # Servers
@@ -43,8 +47,6 @@ sudo apt install --no-install-recommends --no-install-suggests onedrive
 
 onedrive
 onedrive --synchronize
-
-apt install keepassxc
 
 # .............................................................................
 # OpenSSH
@@ -65,6 +67,8 @@ ufw allow ssh
 # Sensors
 # -----------------------------------------------------------------------------
 
+apt install htop
+apt install radeontop
 apt install cpu-x
 apt install stacer
 apt install lm-sensors
@@ -227,4 +231,10 @@ flatpak install flathub net.blockbench.Blockbench￼
 
 wget -P ~/Downloads/ https://zoom.us/client/6.1.1.443/zoom_amd64.deb
 apt install ~/Downloads/zoom_amd64.deb
+
+
+wget -P ~/Downloads/ https://www.ovito.org/download/master/ovito-basic-3.10.6-x86_64.tar.xz
+pushd ~/Downloads/
+tar xJfv ovito-basic-3.10.6-x86_64.tar.xz
+popd
 
