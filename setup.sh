@@ -166,6 +166,14 @@ echo '' >> ~/.jupyter/jupyter_lab_config.py
 echo '## Do not display native kernel.' >> ~/.jupyter/jupyter_lab_config.py
 echo 'c.KernelSpecManager.ensure_native_kernel = False' >> ~/.jupyter/jupyter_lab_config.py
 
+# Add a virtual environment to Jupyter
+# ....................................
+# python3 -m venv ~/venv/myproject
+# source ~/venv/myproject/bin/activate
+# pip install ipykernel
+# python -m ipykernel install --user --name=myproject
+# deactivate
+
 # -----------------------------------------------------------------------------
 # AppImage management
 # -----------------------------------------------------------------------------
