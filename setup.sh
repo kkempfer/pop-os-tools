@@ -174,6 +174,14 @@ echo 'c.KernelSpecManager.ensure_native_kernel = False' >> ~/.jupyter/jupyter_la
 # python -m ipykernel install --user --name=myproject
 # deactivate
 
+# Run Jupyter
+# ....................................
+# jupyter lab
+
+# Remove a kernel from Jupyter
+# ....................................
+# jupyter kernelspec uninstall myproject
+
 # -----------------------------------------------------------------------------
 # AppImage management
 # -----------------------------------------------------------------------------
