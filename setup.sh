@@ -137,8 +137,16 @@ apt install code
 # Java
 # .............................................................................
 
-apt install default-jre
-apt install default-jdk
+apt install openjdk-17-jdk
+
+update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-17-openjdk-amd64/bin/java 17
+update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-11-openjdk-amd64/bin/java 11
+
+# .............................................................................
+# JavaScript
+# .............................................................................
+
+apt install nodejs
 
 # .............................................................................
 # Python
