@@ -43,3 +43,9 @@ java -jar forge-1.20.1-47.0.49-installer.jar
 chmod a+x preview_OptiFine_1.20.1_HD_U_I5_pre6.jar
 java -jar preview_OptiFine_1.20.1_HD_U_I5_pre6.jar
 
+# -----------------------------------------------------------------------------
+# Minecraft Modded - Tools
+# -----------------------------------------------------------------------------
+
+flatpak install NBTExplorer
+
