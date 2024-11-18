@@ -155,6 +155,8 @@ apt install nodejs
 apt install python3-pip python3-venv
 mkdir -p ~/venv
 
+apt install python3-tk
+
 # .............................................................................
 # Jupyter
 # .............................................................................
