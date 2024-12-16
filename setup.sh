@@ -247,6 +247,8 @@ apt install guvcview
 apt install cheese
 
 apt install obs-studio
+sudo apt install ffmpeg
+flatpak install flathub org.openshot.OpenShot
 
 apt install blender
 flatpak install flathub net.blockbench.Blockbench￼
