@@ -157,6 +157,10 @@ mkdir -p ~/venv
 
 apt install python3-tk
 
+add-apt-repository ppa:deadsnakes/ppa
+apt update
+apt install python3.9 python3.9-venv python3.9-dev
+
 # .............................................................................
 # Jupyter
 # .............................................................................
@@ -252,6 +256,8 @@ flatpak install flathub org.openshot.OpenShot
 
 apt install blender
 flatpak install flathub net.blockbench.Blockbench￼
+
+apt install openbabel python3-openbabel
 
 # .............................................................................
 # Zoom
